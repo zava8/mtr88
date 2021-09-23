@@ -8,7 +8,7 @@
     <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
     <application android:label="@string/english_ime_name" android:allowBackup="true" android:backupAgent="org.kiibord.lcd77.LatinIMEBackupAgent"
         android:restoreAnyVersion="true" android:hardwareAccelerated="false" android:killAfterRestore="false"
-        android:icon="@drawable/keyz88">
+        android:icon="@drawable/kibord_icon">
     <service android:name="org.kiibord.lcd77.LatinIME" android:label="@string/english_ime_name" android:permission="android.permission.BIND_INPUT_METHOD">
         <intent-filter><action android:name="android.view.InputMethod"/></intent-filter>
         <meta-data android:name="android.view.im" android:resource="@xml/method" />

@@ -27,7 +27,7 @@ import java.util.regex.Matcher;
 
 public class LatinIME extends InputMethodService implements LatinKeyboardView.OnKeyboardActionListener, SharedPreferences.OnSharedPreferenceChangeListener{
     public static final String PREF_SELECTED_LANGUAGES = "selected_languages"; public static final String PREF_INPUT_LANGUAGE = "input_language";
-    private static final String NOTIFICATION_CHANNEL_ID = "mtr88_notification_channel";private static final int NOTIFICATION_ONGOING_ID = 1001;
+    private static final String NOTIFICATION_CHANNEL_ID = "k88_notification_channel";private static final int NOTIFICATION_ONGOING_ID = 1001;
     static final String PREF_KEYBOARD_NOTIFICATION = "keyboard_notification"; private boolean mKeyboardNotification;
     static final String PREF_RENDER_MODE = "pref_render_mode";
     static final String PREF_FORCE_KEYBOARD_ON = "force_keyboard_on";
@@ -116,7 +116,7 @@ public class LatinIME extends InputMethodService implements LatinKeyboardView.On
             Intent configIntent = new Intent(NotificationReceiver.ACTION_SETTINGS);
             PendingIntent configPendingIntent = PendingIntent.getBroadcast(getApplicationContext(), 2, configIntent, 0);
 
-            String title = "sho mtr88 keypad"; String body = "select this to open mtr88 keypad. disable in settings.";
+            String title = "sho k88 keypad"; String body = "select this to open k88 keypad. disable in settings.";
 
             NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_ID)
                     .setSmallIcon(R.drawable.icon_hk_notification).setColor(0xff220044).setAutoCancel(false)

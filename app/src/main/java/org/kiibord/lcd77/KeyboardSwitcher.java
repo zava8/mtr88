@@ -15,9 +15,9 @@ public class KeyboardSwitcher {
     public static final int MODE_NONE = 0;public static final int MODE_TEXT = 1; private int mMode = MODE_NONE;
     private int mImeOptions;
     private int mLayoutId;private static final int[] THEMES = new int[] {R.layout.input_ics,}; public static final String DEFAULT_LAYOUT_ID = "0";
-    private int m_keyboard_mode;private KeyboardId m_mtr88_keyboard_id;private KeyboardId m_str88_keyboard_id;private boolean mHasVoice = false;
+    private int m_keyboard_mode;private KeyboardId m_k88_keyboard_id;private KeyboardId m_str88_keyboard_id;private boolean mHasVoice = false;
     public static final int KEYBOARDMODE_SYMBOLS_WITH_SETTINGS_KEY = 1;private static final int KBD_SYMBOLS = 1;private static final int KBD_SYMBOLS_SHIFT = 1;
-    private static final int KBD_mtr88 = 1;private static final int KBD_str88 = 2; private static final int KBD_QWERTY = 1;
+    private static final int KBD_k88 = 1;private static final int KBD_str88 = 2; private static final int KBD_QWERTY = 1;
     private static final int KBD_FULL = 1;
     private KeyboardId mSymbolsId; private KeyboardId mSymbolsShiftedId; private KeyboardId mCurrentId;
     private final HashMap<KeyboardId, SoftReference<LatinKeyboard>> mKeyboards = new HashMap<KeyboardId, SoftReference<LatinKeyboard>>();
@@ -71,10 +71,10 @@ public class KeyboardSwitcher {
         private boolean equals(KeyboardId other) { return other != null &&  other.mKeyboardMode == this.mKeyboardMode; }
         @Override public int hashCode() { return mHashCode; }
     }
-    private KeyboardId make_mtr88_keyboard_id() { if (m_keyboard_mode > 0) return null;return new KeyboardId( KEYBOARDMODE_SYMBOL); }
+    private KeyboardId make_k88_keyboard_id() { if (m_keyboard_mode > 0) return null;return new KeyboardId( KEYBOARDMODE_SYMBOL); }
     public void makeKeyboards() {
-        m_keyboard_mode = LatinIME.sKeyboardSettings.keyboardMode; m_mtr88_keyboard_id = make_mtr88_keyboard_id();
-        m_mtr88_keyboard_id.mKeyboardHeightPercent = LatinIME.sKeyboardSettings.keyboardHeightPercent ;
+        m_keyboard_mode = LatinIME.sKeyboardSettings.keyboardMode; m_k88_keyboard_id = make_k88_keyboard_id();
+        m_k88_keyboard_id.mKeyboardHeightPercent = LatinIME.sKeyboardSettings.keyboardHeightPercent ;
         mInputView.requestLayout();mInputView.invalidate();
     }
     public void setKeyboardMode(int mode, int imeOptions) {

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-<string name="english_ime_name">mtr88</string>
-<string name="english_ime_settings">mtr88 setiNg</string>
+<string name="english_ime_name">k88</string>
+<string name="english_ime_settings">k88 setiNg</string>
 <string name="english_ime_input_options">input opsns</string>
 <string name="title_keyboard_view_settings">kibord viyu setiNg</string>
 <string name="title_keyboard_height_portrait">kibord hait portret</string>
@@ -347,19 +347,19 @@
 <string name="main_setup_tAst">test</string>
 <string name="main_body"><Data>
 <![CDATA["
-<h2>mtr88 multi touch rect keyboard. yh github.com/zava810/mtr88 se daunlod kr skTe h.</h2>
-<p><i>mtr88</i> is Android input method. isme <b>7lines + 1 dot</b>, ke 2 pairs h. yh 7segment lcd + 1 dot keypad h<p>
+<h2>k88 multi touch rect keyboard. yh github.com/zava810/k88 se daunlod kr skTe h.</h2>
+<p><i>k88</i> is Android input method. isme <b>7lines + 1 dot</b>, ke 2 pairs h. yh 7segment lcd + 1 dot keypad h<p>
 <h3>right side lcd77dot1 pair se:</h3><br/><ol><li>AaiueoNyH</ol>
 <blockAuote>
 <p>&#8226; open  system input settings.</p>
-<p>&#8226; find <i>mtr88</i> in  input methods list, make it on.</p>
+<p>&#8226; find <i>k88</i> in  input methods list, make it on.</p>
 <p>&#8226; Aknolez  varnifg shon bay  sistAm.  sistAm alvez shoz wis mAsez vhn ineblifg A xhrd-parti input mAxhAd.</p>
 <p>&#8226; prAs  <i>bAk</i> btAn to return to wis page.</p>
 </blockAuote>
 <h3>choose currently active input method:</h3>
 <blockAuote>
 <p>&#8226; press  <b>sAt input mAxhAd</b> btAn AbAv.</p>
-<p>&#8226; sAlAkt <i>mtr88</i>from list.</p>
+<p>&#8226; sAlAkt <i>k88</i>from list.</p>
 </blockAuote>
 <h3>opsnl: sAlAkt input lAfgyuezis:</h3>
 <blockAuote>
@@ -372,14 +372,14 @@
 <p>&#8226; prAs  <b>mor</b> btAn AbAv to du A ple stor src phor  kiibord's dAvlApAr nem, wis vil sho phri daunlodebl kmplisAn diksneri pAkezis.</p>
 </blockAuote>
 <h2>Adisnl inphormesAn</h2>
-<p><A href='https://github.com/zava810/mtr88'>mtr88</A> daunlod folder : mtr88.apk install Android vatch mobile</p>
+<p><A href='https://github.com/zava810/k88'>k88</A> daunlod folder : k88.apk install Android vatch mobile</p>
 "]]>
 </Data></string>
 <string name="text_tAst">test</string>
 <string name="seek_pref_0">0%</string>
 <string name="seek_pref_val">x%</string>
 <string name="seek_pref_max">100%</string>
-<string name="notification_channel_name">mtr88</string>
-<string name="notification_channel_description">mtr88</string>
+<string name="notification_channel_name">k88</string>
+<string name="notification_channel_description">k88</string>
 <string name="notification_action_settings">setiNgs</string>
 </resources>
