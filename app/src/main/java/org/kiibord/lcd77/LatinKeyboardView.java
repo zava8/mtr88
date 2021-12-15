@@ -208,8 +208,13 @@ public class LatinKeyboardView extends View  {
                     invalidate();
                     if (segno >= 0) prev_seg_no = segno;
                 } else {
-//                    if ( segno<0xe && LatinIME.mKeyboardSwitcher.is_nm_lok())
-                    if ( LatinIME.mKeyboardSwitcher.is_nm_lok())
+                    if ( LatinIME.mKeyboardSwitcher.is_nm_lok() ||
+                            (
+                                    (LatinIME.mKeyboardSwitcher.is_go_lok() || LatinIME.mKeyboardSwitcher.is_muv_lok())
+                                    &&
+                                    (segno == 0 || segno == 1 || segno == 2 || segno == 3 || segno == 6 )
+                            )
+                    )
                     {
                         seg2bytes = seg2bytes ^ (1 << segno);
                         is_l88up_pending = mKeyboardActionListener.onText(seg2bytes);
