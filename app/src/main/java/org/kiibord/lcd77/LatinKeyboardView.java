@@ -208,7 +208,14 @@ public class LatinKeyboardView extends View  {
                     invalidate();
                     if (segno >= 0) prev_seg_no = segno;
                 } else {
-                    if(prev_seg_no != segno) {
+                    if ( LatinIME.mKeyboardSwitcher.is_nm_lok() )
+                    {
+                        seg2bytes = seg2bytes ^ (1 << segno);
+                        is_l88up_pending = mKeyboardActionListener.onText(seg2bytes);
+                        seg2bytes = 0x007F ; prev_seg_no = -1;
+                        invalidate();
+                    }
+                    else if(prev_seg_no != segno) {
                         seg2bytes = seg2bytes ^ (1 << segno);
                         invalidate();
                         if (segno >= 0) prev_seg_no = segno;

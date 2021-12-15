@@ -37,7 +37,8 @@ public class LatinIME extends InputMethodService implements LatinKeyboardView.On
     private boolean is_ptrup_ev; //private final int skey_flags = 0 ;
 
     private AlertDialog mOptionsDialog;
-    KeyboardSwitcher mKeyboardSwitcher; private int mNumKeyboardModes = 2;
+    public static KeyboardSwitcher mKeyboardSwitcher; private int mNumKeyboardModes = 2;  /// viml
+//  KeyboardSwitcher mKeyboardSwitcher; private int mNumKeyboardModes = 2;   /// viml
     public static final GlobalKeyboardSettings sKeyboardSettings = new GlobalKeyboardSettings();
     static LatinIME sInstance; private Resources mResources;
     private int mOrientation; private int mHeightPortrait;private int mHeightLandscape;
