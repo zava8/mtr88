@@ -37,8 +37,7 @@ public class LatinIME extends InputMethodService implements LatinKeyboardView.On
     private boolean is_ptrup_ev; //private final int skey_flags = 0 ;
 
     private AlertDialog mOptionsDialog;
-    public static KeyboardSwitcher mKeyboardSwitcher; private int mNumKeyboardModes = 2;  /// viml
-//  KeyboardSwitcher mKeyboardSwitcher; private int mNumKeyboardModes = 2;   /// viml
+    public static KeyboardSwitcher mKeyboardSwitcher; private int mNumKeyboardModes = 2;
     public static final GlobalKeyboardSettings sKeyboardSettings = new GlobalKeyboardSettings();
     static LatinIME sInstance; private Resources mResources;
     private int mOrientation; private int mHeightPortrait;private int mHeightLandscape;
@@ -400,33 +399,27 @@ public class LatinIME extends InputMethodService implements LatinKeyboardView.On
 
             case 0x087F:  kk = KeyEvent.KEYCODE_DEL; break;
             case 0x887F:  kk = KeyEvent.KEYCODE_DEL; break; //num viml
-//            case 0x887F:  send_y_commit_n = false;ksek = "J"; break; //num viml
             case 0x0C7F:  kk = KeyEvent.KEYCODE_DEL; break; //sft
             // pnc case
             case 0x8C7F: kk = KeyEvent.KEYCODE_DEL; break; //num + sft ignore num as decimal numbers are used more
 
             case 0x107F: kk = KeyEvent.KEYCODE_ENTER; break;
             case 0x907F: kk = KeyEvent.KEYCODE_ENTER; break; // num
-//            case 0x907F: send_y_commit_n = false; ksek = "Q"; break; // num
             case 0x147F: kk = KeyEvent.KEYCODE_ENTER; break; // sft
             // pnc case
             case 0x947F: kk = KeyEvent.KEYCODE_ENTER; break; //num + sft ignore num as decimal numbers are used more
 
             case 0x207F:  kk = KeyEvent.KEYCODE_FORWARD_DEL; break;
             case 0xA07F: kk = KeyEvent.KEYCODE_FORWARD_DEL; break; // num //num viml
-//            case 0xA07F: send_y_commit_n = false; ksek = "W" ; break; // num // viml
             case 0x247F: kk = KeyEvent.KEYCODE_FORWARD_DEL; break; // sft
             // pnc case
             case 0xA47F: kk = KeyEvent.KEYCODE_FORWARD_DEL; break; //num + sft ignore num as decimal numbers are used more
 
-//            case 0x407F:  send_y_commit_n = false; ksek = "#"; break;
             case 0x407F:  kk = KeyEvent.KEYCODE_PERIOD; break;
             case 0xC07F: kk = KeyEvent.KEYCODE_PERIOD; break; // num
-//            case 0xC07F: send_y_commit_n = false; ksek = "X"; break; // num
             case 0x447F: kk = KeyEvent.KEYCODE_PERIOD; break; // sft
             // pnc case
             case 0xC47F: kk = KeyEvent.KEYCODE_PERIOD; break; //num + sft ignore num as decimal numbers are used more
-//            case 0xC47F: send_y_commit_n = false; ksek = "#"; break; //num + sft ignore num as decimal numbers are used more
 
             default: isl88_up_pending = true ; break ;
         }
