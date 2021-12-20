@@ -4,6 +4,7 @@
 *.ap_
 *.aab
 *.mp4
+*.zip
 
 # Files for the ART/Dalvik VM
 *.dex
@@ -15,7 +16,10 @@
 bin/
 gen/
 out/
+diliit
 diliit/
+mtr88_src
+mtr88_src/
 arch/.*
 cms/ScreenRecorder/
 cms/dcim/
