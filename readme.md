@@ -1,5 +1,5 @@
 1. ![k88 keypad in smartring][imez_ring1]
-2. [daunlod k88.apk & install in Android][daunlod]
+2. [k88.apk android & install in Android][daunlod]
+3. [k88 video](https://www.youtube.com/watch?v=_noKVHQAwrE)
 
-[imez_ring1]: cms/zpg/ring1.png
 [daunlod]: daunlod/
